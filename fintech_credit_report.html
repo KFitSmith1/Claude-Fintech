@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@page { size: A4; margin: 1.6cm; }
+body { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1a1a1a; }
+h1 { font-size: 21pt; color: #0b3d63; border-bottom: 3px solid #0b3d63; padding-bottom: 8px; }
+h2 { font-size: 15pt; color: #0b3d63; margin-top: 26px; border-bottom: 1px solid #c5d5e0; padding-bottom: 4px; }
+h3 { font-size: 12.5pt; color: #14507a; margin-top: 18px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 8.8pt; }
+th, td { border: 1px solid #b8c7d2; padding: 5px 7px; text-align: left; vertical-align: top; }
+th { background: #0b3d63; color: #fff; font-weight: bold; }
+tr:nth-child(even) { background: #eef3f7; }
+blockquote { background: #fff7e6; border-left: 4px solid #e0a800; margin: 14px 0; padding: 8px 14px; }
+code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 9pt; }
+hr { border: none; border-top: 1px solid #d0d0d0; margin: 22px 0; }
+a { color: #14507a; }
+strong { color: #0b1f2e; }
+ul, ol { margin: 8px 0; }
+li { margin: 3px 0; }
+</style></head><body>
+<h1 id="us-fintech-deposit-focused-companies-offering-credit-products">US Fintech &amp; Deposit-Focused Companies Offering Credit Products</h1>
+<h2 id="a-detailed-guide-to-no-personal-guarantee-products-soft-pull-prequalification-and-itin-accessibility">A Detailed Guide to No-Personal-Guarantee Products, Soft-Pull Prequalification, and ITIN Accessibility</h2>
+<p><strong>Prepared:</strong> June 4, 2026
+<strong>Scope:</strong> US fintechs and deposit-focused neobanks offering <strong>business/corporate cards</strong> and <strong>business loans / lines of credit</strong>, with a focus on applicants who hold <strong>only an ITIN</strong> (no SSN).</p>
+<hr />
+<h2 id="how-to-read-this-report">How to read this report</h2>
+<p>Three terms get used loosely in the market. Getting them straight is the key to the whole report:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>What it actually means</th>
+<th>Why it matters for an ITIN holder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No Personal Guarantee (no-PG)</strong></td>
+<td>The business — not you personally — is liable for the debt. You don't pledge personal assets.</td>
+<td>Common on cash-balance corporate cards. Does <strong>not</strong> by itself mean "no SSN needed."</td>
+</tr>
+<tr>
+<td><strong>No personal credit pull</strong></td>
+<td>The issuer never touches your personal credit file — not even a soft inquiry. Underwriting rests on business cash balance, raised capital, or platform sales.</td>
+<td><strong>The best outcome</strong> for a thin-file or ITIN-only applicant — your personal credit (or lack of it) is irrelevant.</td>
+</tr>
+<tr>
+<td><strong>Soft-pull prequalification</strong></td>
+<td>The issuer does a <em>soft</em> personal-credit inquiry (no score impact) to generate a real, non-binding offer. A <em>hard</em> pull lands only when you accept or draw funds.</td>
+<td>Your personal credit <strong>is</strong> checked — just gently, and only until you commit. Still needs a personal identifier (SSN <strong>or ITIN</strong>).</td>
+</tr>
+</tbody>
+</table>
+<p>A critical, repeated finding: <strong>"no-PG" and "no SSN" are different things.</strong> Almost every legitimate no-PG corporate card still verifies the <em>identity</em> of a beneficial owner (KYC / USA PATRIOT Act). That identity step — not the underwriting — is where ITIN-only applicants hit friction.</p>
+<blockquote>
+<p><strong>The single most important takeaway:</strong> For an ITIN-only founder, the strongest products are those that do <strong>no personal credit pull at all</strong> and accept an <strong>ITIN or passport</strong> at the identity step — because then neither your credit file nor your lack of an SSN is a gate. The next best are platform/embedded lenders that underwrite on your sales history.</p>
+</blockquote>
+<hr />
+<h2 id="part-1-the-big-picture-is-having-only-an-itin-an-issue">PART 1 — The Big Picture: Is Having Only an ITIN an Issue?</h2>
+<p><strong>Bottom line: Having only an ITIN is <em>not</em> a hard blocker, but it narrows your options and — as of mid-2026 — is becoming a bigger friction point.</strong></p>
+<p>There are three distinct pathways into US business credit, and an ITIN-only founder can use all three:</p>
+<ol>
+<li>
+<p><strong>Personal-credit-based business cards</strong> (e.g., Chase Ink, Capital One Spark, Amex Business). These explicitly accept an <strong>ITIN in place of an SSN</strong>, pull your personal credit, and require a personal guarantee. This is the <em>most firmly documented</em> ITIN path — but it requires a personal credit history.</p>
+</li>
+<li>
+<p><strong>Cash-flow / no-PG corporate cards</strong> (Brex, Ramp, Rho, Mercury IO, Stripe). These underwrite on your <strong>business bank balance or raised capital</strong>, not personal credit — so no PG and often <strong>no personal credit pull at all</strong>. The catch: they still collect a personal identifier for KYC. Whether they accept an ITIN/passport at that step varies by issuer and is the make-or-break variable.</p>
+</li>
+<li>
+<p><strong>EIN-only business credit</strong> (net-30 vendors + business bureaus). Builds a <em>business</em> credit file keyed to your EIN/DUNS — essentially no personal-identity barrier beyond the EIN, which an ITIN holder can obtain.</p>
+</li>
+</ol>
+<h3 id="why-issuers-ask-for-an-ssn-even-on-business-products">Why issuers ask for an SSN even on "business" products</h3>
+<p>The SSN request usually serves one of two <em>separable</em> functions:</p>
+<ul>
+<li><strong>Underwriting</strong> — only relevant for products that pull your <em>personal</em> credit (path 1). Pulling credit requires a personal identifier, and bureaus <em>can</em> generate a report keyed to an ITIN.</li>
+<li><strong>Identity / KYC / AML</strong> — required on virtually everything under the <strong>USA PATRIOT Act (CIP rule)</strong>, the <strong>beneficial-ownership (CDD) rule</strong>, and <strong>OFAC</strong> screening. For a <em>non-US person</em>, the CIP rule explicitly allows an <strong>SSN, ITIN, EIN, or passport number</strong> as a valid identifier. So banks <em>can</em> legally accept an ITIN — whether a given fintech <em>does</em> is a policy choice.</li>
+</ul>
+<p><strong>Key insight:</strong> On no-PG cash-balance cards, the SSN ask is almost always a KYC/identity requirement, not an underwriting one. That's the boundary where an ITIN-only founder's experience differs by issuer.</p>
+<h3 id="new-2026-regulatory-headwind">⚠️ New 2026 regulatory headwind</h3>
+<p>A <strong>May 2026 Executive Order, "Restoring Integrity to America's Financial System,"</strong> directs federal regulators to treat customer immigration status as a financial-risk factor. It specifically states that <strong>use of an ITIN to obtain credit products or open deposit accounts where the applicant lacks verified lawful immigration status may be flagged as a risk factor requiring enhanced due diligence.</strong></p>
+<p>Critically:
+- It does <strong>NOT</strong> ban ITIN accounts or ITIN credit applications, and does <strong>not</strong> require banks to close existing accounts or collect citizenship data from current customers (a mandatory-data-collection draft provision was dropped after industry pushback).
+- Treasury was directed to issue a <strong>red-flags advisory (~mid-July 2026)</strong> and propose <strong>BSA rule changes (~mid-August 2026)</strong>.
+- <strong>Practical effect:</strong> an ITIN-only applicant may face <strong>more identity questions and enhanced due diligence</strong>, especially without verified lawful status — but ITIN credit access remains legal.</p>
+<p><em>This is a fast-moving area. Reconfirm the current Treasury guidance before applying.</em></p>
+<hr />
+<h2 id="part-2-no-personal-guarantee-corporate-business-cards">PART 2 — No-Personal-Guarantee Corporate &amp; Business Cards</h2>
+<p>These underwrite on business cash/capital, not your personal credit. <strong>No-PG ≠ no-SSN</strong> — the ITIN column is what matters for you.</p>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Product type</th>
+<th>No PG?</th>
+<th>Personal credit pull?</th>
+<th>ITIN / no-SSN path</th>
+<th>Key approval requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ramp</strong></td>
+<td>Corporate charge card</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>✅ <strong>Strongest documented</strong> — apply with foreign <strong>passport + proof of address</strong> instead of SSN</td>
+<td>~$25K in a US business bank account; incorporated/LLC/partnership (no sole props); mostly US operations</td>
+</tr>
+<tr>
+<td><strong>Stripe Corporate Card</strong></td>
+<td>Charge card (Stripe Issuing)</td>
+<td>✅ Yes</td>
+<td>Soft only (no hard)</td>
+<td>✅ Underlying Stripe account <strong>explicitly accepts ITIN</strong> (and non-US tax IDs)</td>
+<td>Must be an existing Stripe processing customer; limit from processing volume</td>
+</tr>
+<tr>
+<td><strong>Brex</strong></td>
+<td>Corporate charge card</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>⚠️ EIN-forward, but <strong>excludes non-US-registered companies</strong>; ITIN at KYC <em>unverified</em></td>
+<td>~$50K cash balance (funded startups); US-registered C/S-corp, LLC, LLP only; connect bank account</td>
+</tr>
+<tr>
+<td><strong>Rho</strong></td>
+<td>Corporate charge card</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>⚠️ Non-residents effectively need a US address or a US SSN-holder on the account</td>
+<td>US corp/LLC/LP; underwrites raised capital + cash on hand; works pre-revenue</td>
+</tr>
+<tr>
+<td><strong>Mercury IO</strong></td>
+<td>Charge card (cash-backed)</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>⚠️ Business accounts open with passport+EIN; <strong>Personal accounts reject ITIN</strong>; IO-via-ITIN <em>unverified</em></td>
+<td>Hold a qualifying Mercury balance (~$25K for meaningful limits); US entity + EIN</td>
+</tr>
+<tr>
+<td><strong>Revenued</strong></td>
+<td>Prepaid Visa + revenue-based Flex Line</td>
+<td>✅ Yes</td>
+<td>❌ None (no credit check)</td>
+<td>⚠️ Plausibly accommodating (revenue-only), but <em>unverified</em></td>
+<td>≥1 yr in business; ≥$20K/mo bank deposits; no sole props</td>
+</tr>
+<tr>
+<td><strong>Emburse</strong></td>
+<td>Commercial Mastercard (spend platform)</td>
+<td>✅ Yes</td>
+<td>❌ None indicated</td>
+<td>⚠️ FAQ allows "personal <em>or business</em> ID number"; ITIN-specific <em>unverified</em></td>
+<td>Enterprise-oriented; verify one control person's identity</td>
+</tr>
+<tr>
+<td><strong>Navan</strong></td>
+<td>Corporate charge card</td>
+<td>✅ Yes</td>
+<td>❌ None (company-level)</td>
+<td>⚠️ <em>Unverified</em>; aimed at larger firms</td>
+<td>~$4M+ revenue typical; assessed at company level</td>
+</tr>
+<tr>
+<td><strong>BILL Divvy (Spend &amp; Expense)</strong></td>
+<td>Charge card / spend line</td>
+<td>⚠️ Conditional</td>
+<td>Soft pull</td>
+<td>⚠️ <em>Unverified</em></td>
+<td>~$20K bank balance or steady cash flow; ≥3 mo in business</td>
+</tr>
+<tr>
+<td><strong>Capital on Tap</strong></td>
+<td>Revolving business credit card</td>
+<td>❌ <strong>No — PG required</strong></td>
+<td>Soft on personal + hard on business</td>
+<td>⚠️ Uses EIN/SSN; ITIN <em>unverified</em></td>
+<td>EIN for LLC/Corp; ~670+ FICO improves odds; ~$25K balance</td>
+</tr>
+<tr>
+<td><strong>Torpago</strong></td>
+<td>Corporate charge card</td>
+<td>⚠️ Conditional (carve-out)</td>
+<td>Marketed none</td>
+<td>⚠️ <em>Unverified</em></td>
+<td><strong>Reportedly no longer accepting direct applications</strong> — verify availability</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-standouts-for-an-itin-only-founder">The standouts for an ITIN-only founder</h3>
+<ul>
+<li><strong>Ramp</strong> — the best-documented <em>no-SSN</em> path: their own onboarding lets an owner/officer apply with a foreign passport + proof of address. No PG, no personal credit pull.</li>
+<li><strong>Stripe Corporate Card</strong> — the underlying Stripe account <em>explicitly</em> accepts an ITIN (and non-US tax IDs). No PG, no hard pull. Caveat: you must be a Stripe processing customer and limits derive from volume.</li>
+<li><strong>Revenued</strong> — no PG and no credit check at all (revenue-only), so SSN/FICO are largely irrelevant — though explicit ITIN acceptance is unverified and it's technically revenue-based financing, not a true card.</li>
+</ul>
+<p><strong>Watch-outs:</strong> <em>Capital on Tap is NOT no-PG</em> (a personal guarantee is required despite a soft personal pull — proof that "soft pull" ≠ "no PG"). <em>Brex's</em> policies may shift following its <strong>Capital One acquisition (closed ~April 2026)</strong>. <em>Torpago</em> appears unavailable to new direct applicants.</p>
+<hr />
+<h2 id="part-3-business-loans-lines-of-credit-soft-pull-prequalification">PART 3 — Business Loans &amp; Lines of Credit (Soft-Pull Prequalification)</h2>
+<p>This is where soft-pull prequalification lives. The table separates <em>whether</em> there's a soft prequal from <em>when</em> the hard pull lands and <em>whether</em> a PG is required.</p>
+<table>
+<thead>
+<tr>
+<th>Lender</th>
+<th>Product</th>
+<th>Soft-pull prequal?</th>
+<th>Hard pull stage</th>
+<th>PG required?</th>
+<th>ITIN</th>
+<th>Key requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bluevine</strong></td>
+<td>Line of credit (≤$250K)</td>
+<td>✅ Yes</td>
+<td>On acceptance</td>
+<td>✅ Yes</td>
+<td>✅ <strong>Accepts SSN or ITIN</strong> (+ passport route)</td>
+<td>12+ mo; $120K+ revenue; FICO 625+</td>
+</tr>
+<tr>
+<td><strong>Fundbox</strong></td>
+<td>Line of credit</td>
+<td>✅ Yes</td>
+<td>On <strong>first draw</strong></td>
+<td>✅ Yes</td>
+<td>⚠️ Unverified</td>
+<td>600 FICO; 3–6 mo; bank-data underwriting</td>
+</tr>
+<tr>
+<td><strong>OnDeck</strong></td>
+<td>Term loan + LOC</td>
+<td>✅ Yes</td>
+<td>On acceptance</td>
+<td>✅ Yes (+ lien on term)</td>
+<td>⚠️ Unverified</td>
+<td>625+ FICO; $100K+ revenue; 1+ yr</td>
+</tr>
+<tr>
+<td><strong>Amex Business Blueprint</strong> (ex-Kabbage)</td>
+<td>Line of credit</td>
+<td>❌ <strong>No — hard pull upfront</strong></td>
+<td>At application</td>
+<td>✅ Yes</td>
+<td>⚠️ Unverified</td>
+<td>660 FICO; 1+ yr; ~$3K/mo revenue</td>
+</tr>
+<tr>
+<td><strong>Credibly</strong></td>
+<td>MCA / working capital / LOC</td>
+<td>✅ Yes</td>
+<td>If you proceed</td>
+<td>✅ Yes</td>
+<td>⚠️ Unverified</td>
+<td>500 FICO (MCA); $15K/mo revenue; 6 mo</td>
+</tr>
+<tr>
+<td><strong>Backd</strong></td>
+<td>LOC + working capital</td>
+<td>⚠️ Claimed (unverified)</td>
+<td>Unverified</td>
+<td>❌ <strong>No PG on the LOC</strong></td>
+<td>⚠️ Unverified</td>
+<td>~650 FICO; 1–2 yr; high revenue floor</td>
+</tr>
+<tr>
+<td><strong>National Funding</strong></td>
+<td>Working capital / equipment</td>
+<td>✅ Yes</td>
+<td>At final decision</td>
+<td>⚠️ Likely</td>
+<td>⚠️ Unverified</td>
+<td>~600 FICO; 6+ mo; ~$250K revenue</td>
+</tr>
+<tr>
+<td><strong>Rapid Finance</strong></td>
+<td>Term / LOC / MCA</td>
+<td>⚠️ "No-hard-check" prequal, but <strong>hard pull on full app</strong></td>
+<td>At application</td>
+<td>✅ Yes</td>
+<td>⚠️ Unverified</td>
+<td>2+ yr / ~$120K revenue best</td>
+</tr>
+<tr>
+<td><strong>Giggle Finance</strong></td>
+<td>Revenue-based (gig/1099)</td>
+<td>✅ Yes (no score-based UW)</td>
+<td>—</td>
+<td>✅ (MCA, assumed)</td>
+<td>⚠️ Unverified (very accessible model)</td>
+<td>3+ mo; 1099 income; bank link</td>
+</tr>
+<tr>
+<td><strong>Mercury</strong></td>
+<td>Working capital / venture debt</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>❌ <strong>No PG (working capital)</strong></td>
+<td>⚠️ Unverified</td>
+<td>Ecommerce/VC focus; <strong>not available in CA</strong></td>
+</tr>
+<tr>
+<td><strong>Lendio</strong></td>
+<td>Marketplace (75+ lenders)</td>
+<td>✅ Yes</td>
+<td>At matched lender</td>
+<td>Varies</td>
+<td>Depends on lender</td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Fundera (NerdWallet)</strong></td>
+<td>Marketplace</td>
+<td>✅ Yes</td>
+<td>At matched lender</td>
+<td>Varies</td>
+<td>Depends on lender</td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>Funding Circle</strong></td>
+<td>Term / LOC / SBA</td>
+<td>✅ Usually</td>
+<td>Some structures / SBA</td>
+<td>✅ Yes (+ lien)</td>
+<td>❌ Not for SBA</td>
+<td>660 FICO; 2+ yr; $50K revenue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="embedded-platform-lenders-underwrite-on-sales-not-credit-best-for-itin">Embedded / platform lenders — underwrite on sales, not credit (best for ITIN)</h3>
+<p>These never pull personal credit; they fund off your platform sales history. The first three explicitly treat ITIN as identity-only.</p>
+<table>
+<thead>
+<tr>
+<th>Lender</th>
+<th>Product</th>
+<th>Personal credit pull?</th>
+<th>PG required?</th>
+<th>ITIN</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shopify Capital</strong></td>
+<td>MCA / term loan from Shopify sales</td>
+<td>❌ None</td>
+<td>❌ No</td>
+<td>✅ <strong>Explicitly SSN <em>or</em> ITIN</strong></td>
+<td>Active Shopify store w/ sales; invitation-based</td>
+</tr>
+<tr>
+<td><strong>Stripe Capital</strong></td>
+<td>Advance on Stripe volume</td>
+<td>❌ None</td>
+<td>❌ No</td>
+<td>✅ <strong>Explicitly SSN <em>or</em> ITIN</strong></td>
+<td>Stripe processing history; offer-based</td>
+</tr>
+<tr>
+<td><strong>Square Loans</strong></td>
+<td>Loan repaid via card sales</td>
+<td>❌ None</td>
+<td>❌ No (≤$250K); ✅ &gt;$250K</td>
+<td>✅ <strong>SSN or ITIN (identity only)</strong></td>
+<td>Square processing history; ~$10K+/yr</td>
+</tr>
+<tr>
+<td><strong>PayPal Working Capital</strong></td>
+<td>Advance on PayPal sales</td>
+<td>❌ None</td>
+<td>❌ No</td>
+<td>⚠️ Likely (unpublished)</td>
+<td>PayPal account 90+ days; $15K–$20K/yr sales</td>
+</tr>
+<tr>
+<td><strong>PayPal Business Loan</strong> (LoanBuilder)</td>
+<td>Fixed-fee term loan</td>
+<td>Soft → hard on accept</td>
+<td>✅ Yes</td>
+<td>⚠️ Unverified</td>
+<td>580+ FICO; 9+ mo; ~$33K revenue</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Avoid the SBA path if you're ITIN-only:</strong> 2026 SBA rules (Policy Notice 5000-876441) require <strong>100% US-citizen/national ownership</strong>, disqualifying ITIN-only owners. This affects SBA loans routed through Lendio, Fundera, Funding Circle, Live Oak, etc.</p>
+</blockquote>
+<h3 id="synthesis">Synthesis</h3>
+<ul>
+<li><strong>True soft-pull prequal (credit checked, but softly until you commit):</strong> Bluevine, Fundbox, OnDeck, Credibly, National Funding, PayPal Business Loan, and the marketplaces (Lendio, Fundera). Marketplaces are the efficient way to comparison-shop on a single soft pull.</li>
+<li><strong>No personal credit pull at all:</strong> Shopify Capital, Stripe Capital, Square Loans, PayPal Working Capital, Mercury Working Capital, and (per reviews) Backd's LOC.</li>
+<li><strong>Worst for rate-shopping:</strong> Amex Business Blueprint (hard pull upfront, no soft option) and Rapid Finance (markets "no-hard-check" prequal but hard-pulls on the real application).</li>
+</ul>
+<hr />
+<h2 id="part-4-deposit-focused-neobanks-their-credit-products">PART 4 — Deposit-Focused Neobanks &amp; Their Credit Products</h2>
+<p><strong>Key finding:</strong> No mainstream business-banking fintech offers a <em>true underwritten revolving credit line</em> an ITIN-only newcomer can easily access. The ITIN-accessible credit at these companies is almost entirely <strong>cash-balance charge cards</strong> (Mercury IO, Rho, Meow) that do no personal credit pull — so an SSN isn't a <em>credit</em> gate, only KYB is.</p>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Deposit ITIN-friendly?</th>
+<th>Credit product</th>
+<th>No PG?</th>
+<th>Credit pull</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mercury</strong></td>
+<td>✅ Business: passport + EIN, no SSN</td>
+<td>IO charge card</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>Strongest combined deposit+credit story for non-resident <em>business</em> founders. Personal accounts are SSN-only. Tightened address KYB in 2025.</td>
+</tr>
+<tr>
+<td><strong>Wise (Business)</strong></td>
+<td>✅ <strong>Most flexible</strong> (SSN, ITIN, or ID+selfie)</td>
+<td>❌ None</td>
+<td>—</td>
+<td>None</td>
+<td>Great for ITIN deposits; <strong>no credit product at all</strong>.</td>
+</tr>
+<tr>
+<td><strong>Bluevine</strong></td>
+<td>✅ SSN or ITIN for identity</td>
+<td>Real revolving LOC</td>
+<td>❌ No (PG req'd)</td>
+<td>Soft → hard</td>
+<td>Has <em>real</em> credit, but LOC needs FICO 625+, 12 mo, $120K revenue + PG — hard for a new ITIN-only founder.</td>
+</tr>
+<tr>
+<td><strong>Baselane</strong></td>
+<td>✅ <strong>Explicitly SSN or ITIN</strong></td>
+<td>Partner loans only</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>Real-estate niche; no native credit card.</td>
+</tr>
+<tr>
+<td><strong>Novo</strong></td>
+<td>✅ Listed SSN or ITIN</td>
+<td>Invite-only card + MCA "Funding"</td>
+<td>n/a</td>
+<td>Soft (Funding)</td>
+<td>Card is invite-only; Funding is an MCA (~$500/mo revenue).</td>
+</tr>
+<tr>
+<td><strong>Relay</strong></td>
+<td>⚠️ SSN expected for owners</td>
+<td>Cashback card</td>
+<td>Unverified</td>
+<td>None for opening</td>
+<td>Good for foreign-<em>owned</em> US LLCs, but owner-level SSN expected; ITIN substitution unconfirmed.</td>
+</tr>
+<tr>
+<td><strong>NorthOne</strong></td>
+<td>⚠️ SSN expected</td>
+<td>Marketplace LOC/loans</td>
+<td>Per lender</td>
+<td>Per lender</td>
+<td>Credit is a referral, not native.</td>
+</tr>
+<tr>
+<td><strong>Lili</strong></td>
+<td>✅ Non-resident: passport + EIN</td>
+<td>❌ None</td>
+<td>—</td>
+<td>—</td>
+<td>No credit product. Conflicting SSN guidance (resident vs non-resident flows).</td>
+</tr>
+<tr>
+<td><strong>Rho</strong></td>
+<td>⚠️ Unverified</td>
+<td>Corporate charge card</td>
+<td>✅ Yes</td>
+<td>❌ None</td>
+<td>No published ITIN support; US-incorporation oriented.</td>
+</tr>
+<tr>
+<td><strong>Meow</strong></td>
+<td>⚠️ Unverified</td>
+<td>Corporate card</td>
+<td>✅ (inferred)</td>
+<td>❌ None (inferred)</td>
+<td>Treasury/startup focus; not immigrant-targeted.</td>
+</tr>
+<tr>
+<td><strong>Grasshopper / Live Oak</strong></td>
+<td>❌ SSN-based (chartered banks)</td>
+<td>Cards / SBA loans</td>
+<td>❌ No (PG req'd)</td>
+<td>Hard</td>
+<td>Traditional underwriting; least ITIN-relevant.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="immigrant-itin-focused-providers">Immigrant / ITIN-focused providers</h3>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Type</th>
+<th>ITIN</th>
+<th>Credit product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Comun</strong></td>
+<td>Consumer neobank (Latino immigrants)</td>
+<td>✅ Opens with ITIN/passport, no SSN</td>
+<td>Deposit + nascent/secured credit-builder</td>
+</tr>
+<tr>
+<td><strong>Majority</strong></td>
+<td>Consumer neobank (immigrants)</td>
+<td>✅ ITIN accepted (may not even be required)</td>
+<td><strong>No credit product</strong></td>
+</tr>
+<tr>
+<td><strong>Welcome Tech / SABEResPODER</strong></td>
+<td>Immigrant services + banking (Green Dot)</td>
+<td>✅ ITIN-friendly</td>
+<td>Partner-mediated credit (thin detail)</td>
+</tr>
+<tr>
+<td><strong>Camino Financial</strong></td>
+<td>Immigrant <em>business</em> lender</td>
+<td>✅ <strong>Secured/micro loans accept ITIN-only</strong> (no min FICO)</td>
+<td><strong>Unsecured loans require SSN</strong></td>
+</tr>
+<tr>
+<td><strong>Tomo</strong></td>
+<td>Consumer credit card</td>
+<td>✅ Accepts ITIN</td>
+<td>Credit card (cash-flow underwriting)</td>
+</tr>
+<tr>
+<td><strong>Petal</strong></td>
+<td>Consumer credit card</td>
+<td>✅ Accepts ITIN/passport/visa</td>
+<td>Credit card <em>(verify still issuing in 2026)</em></td>
+</tr>
+<tr>
+<td><strong>Self</strong></td>
+<td>Consumer credit-builder</td>
+<td>✅ SSN or ITIN</td>
+<td>Credit-builder account + secured Visa, no hard pull</td>
+</tr>
+<tr>
+<td><strong>Sequin</strong></td>
+<td>Consumer debit + credit-building</td>
+<td>❌ <strong>SSN required</strong></td>
+<td>Debit (not a credit line)</td>
+</tr>
+<tr>
+<td><strong>Stilt</strong></td>
+<td>Was immigrant lender</td>
+<td>—</td>
+<td><strong>Effectively defunct</strong> (platform sold to J.G. Wentworth, 2022)</td>
+</tr>
+<tr>
+<td><strong>Nova Credit / Highnote</strong></td>
+<td>Infrastructure (not openable accounts)</td>
+<td>n/a</td>
+<td><em>Power</em> ITIN-friendly products at other issuers (e.g., Amex newcomer underwriting)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-5-the-ein-only-pathway-build-business-credit-without-an-ssn">PART 5 — The EIN-Only Pathway: Build Business Credit Without an SSN</h2>
+<p>This is the most reliable, lowest-friction route for an ITIN-only founder because it leans on the <em>business</em> identity, not yours.</p>
+<ol>
+<li><strong>Form a US LLC or corporation</strong> and obtain an <strong>EIN</strong> from the IRS — an ITIN holder qualifies to request one.</li>
+<li><strong>Get a free D-U-N-S number</strong> from Dun &amp; Bradstreet (tied to the EIN, not your SSN).</li>
+<li><strong>Open net-30 vendor accounts</strong> that report to business bureaus with EIN only (no personal credit check):</li>
+<li><strong>Uline</strong> — reports to all 3 business bureaus; needs business name + EIN; orders ~$50+ to be reported.</li>
+<li><strong>Quill</strong> — easy approval; EIN + ~30 days in business; reports to D&amp;B.</li>
+<li><strong>Grainger</strong> — EIN + ~3 months in business; DUNS ideal.</li>
+<li><strong>Crown Office Supplies</strong> — no personal credit check; 90 days in business; active EIN.</li>
+<li><strong>Add Nav Prime</strong> to report 1–2 monthly tradelines to D&amp;B, Experian Business, and Equifax Business.</li>
+<li>The three <strong>business bureaus</strong> (D&amp;B PAYDEX, Experian Business, Equifax Business) typically surface payment history after ~60–120 days.</li>
+</ol>
+<p>This builds a <strong>business</strong> credit profile independent of your personal SSN/ITIN.</p>
+<blockquote>
+<p><strong>Note:</strong> Avoid older guides citing <strong>Nearside</strong> (shut down 2022/23) or the <strong>Tillful card</strong> (acquired by Nav in 2023; card discontinued — use <strong>Nav Prime</strong> instead).</p>
+</blockquote>
+<hr />
+<h2 id="part-6-recommended-action-plan-for-an-itin-only-founder">PART 6 — Recommended Action Plan for an ITIN-Only Founder</h2>
+<p><strong>Foundation (do first):</strong>
+1. Register a US LLC/corporation; get an <strong>EIN</strong> using your ITIN.
+2. Secure a <strong>US business address</strong> and open a <strong>US business bank account</strong>. If traditional banks balk, use <strong>Mercury (Business)</strong>, <strong>Wise</strong>, <strong>Comun</strong>, or <strong>Majority</strong> — all open with ITIN/passport.
+3. Register a free <strong>D-U-N-S</strong> number.</p>
+<p><strong>(a) For a no-PG corporate card:</strong>
+4. Fund the business account with a real balance (~$25K helps for Ramp; ~$50K for Brex).
+5. Apply to <strong>Ramp</strong> (best no-SSN path) or <strong>Stripe Corporate Card</strong> (explicit ITIN). Have your <strong>ITIN, passport, and EIN</strong> ready, and <strong>ask the issuer directly whether ITIN/passport satisfies the beneficial-owner identity check</strong> — this is the make-or-break step and is not uniformly documented.
+6. In parallel, build EIN-only net-30 tradelines + Nav Prime.</p>
+<p><strong>(b) For business financing:</strong>
+7. If you sell on a platform, pursue <strong>Shopify Capital / Stripe Capital / Square Loans</strong> — no credit pull, no PG, explicit ITIN acceptance (identity only).
+8. For a credit-underwritten line, <strong>Bluevine</strong> openly accepts ITIN (but requires FICO 625+, $120K revenue, and a PG).
+9. For a term loan, use <strong>Camino Financial's secured/micro business loan</strong> (accepts ITIN-only, no min FICO).
+10. <strong>Avoid the SBA path</strong> — 2026 rules require 100% US-citizen ownership.</p>
+<p><strong>(c) If you need to build personal credit first:</strong>
+11. <strong>Self</strong> (credit-builder + secured Visa, ITIN OK, no hard pull) and consumer cards like <strong>Tomo</strong> / <strong>Petal</strong> (ITIN accepted) can establish a personal file that later unlocks personal-credit business cards (Chase Ink, Capital One Spark, Amex Business — all accept ITIN).</p>
+<hr />
+<h2 id="quick-reference-best-bets-for-an-itin-only-applicant">Quick-Reference: Best Bets for an ITIN-Only Applicant</h2>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>Best options</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No-PG corporate card</strong></td>
+<td><strong>Ramp</strong>, <strong>Stripe Corporate Card</strong></td>
+<td>No PG, no personal credit pull, documented no-SSN/ITIN path</td>
+</tr>
+<tr>
+<td><strong>Business financing, no credit pull</strong></td>
+<td><strong>Shopify / Stripe / Square Capital</strong></td>
+<td>Sales-based, no PG, explicit ITIN (identity only)</td>
+</tr>
+<tr>
+<td><strong>Real revolving credit line</strong></td>
+<td><strong>Bluevine</strong></td>
+<td>Openly accepts ITIN (but PG + FICO 625+ required)</td>
+</tr>
+<tr>
+<td><strong>Business term loan, ITIN-only</strong></td>
+<td><strong>Camino Financial</strong> (secured/micro)</td>
+<td>Rare business loan accepting ITIN-only, no min FICO</td>
+</tr>
+<tr>
+<td><strong>ITIN-friendly business deposits</strong></td>
+<td><strong>Mercury (Business)</strong>, <strong>Wise</strong>, <strong>Baselane</strong></td>
+<td>Open with passport/ITIN + EIN, no SSN</td>
+</tr>
+<tr>
+<td><strong>Build personal credit (ITIN)</strong></td>
+<td><strong>Self</strong>, <strong>Tomo</strong>, <strong>Petal</strong></td>
+<td>Accept ITIN; no/soft pull</td>
+</tr>
+<tr>
+<td><strong>Build business credit (EIN-only)</strong></td>
+<td><strong>Uline, Quill, Grainger, Crown + Nav Prime</strong></td>
+<td>No personal credit check at all</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="important-caveats-methodology">Important Caveats &amp; Methodology</h2>
+<ul>
+<li><strong>Point-in-time data.</strong> This reflects publicly available information as of June 2026. Fintech approval criteria, ITIN policies, and product availability change frequently. <strong>Confirm every figure directly with the provider before applying.</strong></li>
+<li><strong>ITIN acceptance is firmly verified only where stated.</strong> It is <em>explicitly documented</em> for Stripe, Shopify Capital, Square Loans, Bluevine (identity), Self, Tomo, Petal, Camino (secured), Comun, Majority, and Wise. For Ramp the verified path is "foreign passport instead of SSN." For Brex, Mercury IO, Rho, Meow, and most loan products, ITIN acceptance is <strong>unverified</strong> — treat as "ask first."</li>
+<li><strong>"No-PG" never means anonymous.</strong> Beneficial-owner KYC identity is always required.</li>
+<li><strong>Moving targets:</strong> Brex's policies may change post–Capital One acquisition (closed ~April 2026). Torpago appears unavailable to new direct applicants. Stilt is defunct. Petal's 2026 issuing status should be verified. The May 2026 Executive Order on ITIN/immigration banking is still being implemented (Treasury guidance due summer 2026).</li>
+<li><strong>Not legal or financial advice.</strong> Consult a qualified advisor for your specific situation.</li>
+</ul>
+<hr />
+<p><em>Report compiled from research across no-PG corporate cards, fintech business lending, deposit-focused neobanks, ITIN-access analysis, and the soft-pull prequalification landscape. Sources include company help centers and product pages (Brex, Ramp, Rho, Mercury, Stripe, Bluevine, Shopify, Square, PayPal, Comun, Majority, Camino, Self, Wise, and others), independent reviews (NerdWallet, Nav, Bankrate, Merchant Maverick, Finder), and regulatory/legal sources (FinCEN CIP guidance, Federal Register CDD rule, White House Executive Order, Mayer Brown, Time).</em></p>
+</body></html>
