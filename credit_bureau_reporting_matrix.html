@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@page { size: A4; margin: 1.6cm; }
+body { font-family: 'Liberation Sans','DejaVu Sans',Arial,sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1a1a1a; }
+h1 { font-size: 21pt; color: #0b3d63; border-bottom: 3px solid #0b3d63; padding-bottom: 8px; }
+h2 { font-size: 15pt; color: #0b3d63; margin-top: 26px; border-bottom: 1px solid #c5d5e0; padding-bottom: 4px; }
+h3 { font-size: 12.5pt; color: #14507a; margin-top: 18px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 8.4pt; }
+th, td { border: 1px solid #b8c7d2; padding: 5px 6px; text-align: left; vertical-align: top; }
+th { background: #0b3d63; color: #fff; font-weight: bold; }
+tr:nth-child(even) { background: #eef3f7; }
+blockquote { background: #fff7e6; border-left: 4px solid #e0a800; margin: 14px 0; padding: 8px 14px; }
+code { background: #eef1f4; padding: 1px 4px; border-radius: 3px; font-size: 9pt; }
+hr { border: none; border-top: 1px solid #d0d0d0; margin: 22px 0; }
+a { color: #14507a; }
+strong { color: #0b1f2e; }
+ul, ol { margin: 8px 0; }
+li { margin: 3px 0; }
+</style></head><body>
+<h1 id="credit-bureau-reporting-matrix">Credit Bureau Reporting Matrix</h1>
+<h2 id="which-us-fintech-deposit-focused-credit-products-report-and-to-which-bureaus">Which US Fintech &amp; Deposit-Focused Credit Products Report — and to Which Bureaus</h2>
+<p><strong>Prepared:</strong> June 4, 2026
+<strong>Companion to:</strong> <em>US Fintech &amp; Deposit-Focused Companies Offering Credit Products</em>
+<strong>Question answered:</strong> For each account/product, <em>does it report payment activity to the credit bureaus, and which ones</em> — business bureaus (Dun &amp; Bradstreet, Experian Business, Equifax Business, SBFE) vs. consumer bureaus (Equifax, Experian, TransUnion) — and is it ongoing positive history or default-only?</p>
+<hr />
+<h2 id="how-to-read-this-five-things-that-matter">How to read this — five things that matter</h2>
+<ol>
+<li>
+<p><strong>Business bureaus ≠ consumer bureaus.</strong> Building <em>business</em> credit (D&amp;B PAYDEX, Experian Business, Equifax Business) is a completely separate file from your <em>personal</em> credit (Equifax/Experian/TransUnion). Most fintech business products that report do so to <strong>business</strong> bureaus only.</p>
+</li>
+<li>
+<p><strong>No-PG = usually nothing to your personal credit, ever.</strong> Without a personal guarantee there's no individual liable, so true no-PG corporate cards generally report <strong>nothing — positive or negative — to consumer bureaus, even on default</strong>. The generic "a missed business-card payment hits your personal credit after 60 days" warning applies to <strong>PG-backed</strong> cards, not genuine no-PG cards.</p>
+</li>
+<li>
+<p><strong>SBFE is not a bureau</strong> — it's the Small Business Financial Exchange, a member data co-op that <em>feeds</em> D&amp;B, Experian, Equifax, and LexisNexis. "Reports to SBFE only" means the data <em>can</em> surface in business reports but through a single, narrower channel.</p>
+</li>
+<li>
+<p><strong>Reporting is voluntary.</strong> No law requires any issuer or vendor to report. Practices change without notice — verify before relying on any single tradeline.</p>
+</li>
+<li>
+<p><strong>"Default-only" is a trap for credit-builders.</strong> A product that reports <em>only</em> missed payments (e.g., Uline, per several sources) can hurt you but won't build positive history. For building credit you want <strong>ongoing positive</strong> reporting.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>The headline:</strong> If your goal is to <strong>build business credit with zero personal-credit exposure</strong>, the cleanest, best-documented tools are <strong>Brex, Ramp, Mercury IO, Relay, and Nav Prime</strong> (all report ongoing positive history to all three major business bureaus, no PG). For a thin <strong>personal</strong> file on an ITIN, <strong>Self</strong> is the strongest confirmed builder.</p>
+</blockquote>
+<hr />
+<h2 id="part-1-no-pg-corporate-charge-cards">PART 1 — No-PG Corporate / Charge Cards</h2>
+<table>
+<thead>
+<tr>
+<th>Card</th>
+<th>Reports?</th>
+<th>Business bureaus</th>
+<th>Consumer bureaus</th>
+<th>Positive or default-only</th>
+<th>Builds business credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brex</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax (direct)</td>
+<td>❌ Never</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Ramp</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax</td>
+<td>❌ Never</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Mercury IO</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax</td>
+<td>❌ None</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Rho</strong></td>
+<td>✅ At discretion</td>
+<td>D&amp;B/Exp/Equifax (exact list unverified)</td>
+<td>❌ Never</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (discretionary)</td>
+</tr>
+<tr>
+<td><strong>Stripe Corp Card</strong></td>
+<td>✅ Yes</td>
+<td><strong>SBFE only</strong> (→ may reach the three)</td>
+<td>❌ None (soft pull only)</td>
+<td>Unverified (pos vs default)</td>
+<td>⚠️ Weak (SBFE-only)</td>
+</tr>
+<tr>
+<td><strong>Revenued</strong></td>
+<td>✅ Yes</td>
+<td>SBFE (→ D&amp;B)</td>
+<td>❌ None</td>
+<td>Positive (timely pmts)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>BILL Divvy (Spend &amp; Expense)</strong></td>
+<td>✅ Yes</td>
+<td>SBFE → D&amp;B, Equifax, Experian, LexisNexis</td>
+<td>Only if PG signed + default</td>
+<td>Positive (on-time)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Torpago</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B confirmed; full list unverified</td>
+<td>❌ None</td>
+<td>Positive (on-time)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Emburse</strong></td>
+<td>⚠️ Personal: no (unless delinquent); business: unverified</td>
+<td>Unverified</td>
+<td>Possibly on delinquency (unverified)</td>
+<td>Unverified</td>
+<td>❌ Not marketed</td>
+</tr>
+<tr>
+<td><strong>Navan</strong> (corporate)</td>
+<td>❌ Generally <strong>NO</strong> to business bureaus under owner</td>
+<td>None</td>
+<td>None</td>
+<td>N/A</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Capital on Tap</strong> ⚠️ <em>PG required</em></td>
+<td>✅ Yes</td>
+<td>Experian, D&amp;B</td>
+<td>✅ <strong>Yes — on default</strong> (PG)</td>
+<td>Positive to biz; default-only to personal</td>
+<td>✅ Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong> <em>Brex, Ramp, Mercury IO</em> are the gold standard — all three business bureaus, ongoing positive, never touch personal credit. <em>Stripe / Revenued / BILL Divvy</em> build via the narrower SBFE channel. <em>Navan</em> and <em>Emburse</em> are expense-management tools, not credit-builders. <strong>Capital on Tap is the one card here that <em>can</em> hit personal credit on default — because it requires a personal guarantee</strong> (it is not a true no-PG card).</p>
+<hr />
+<h2 id="part-2-business-loans-lines-of-credit-embedded-lenders">PART 2 — Business Loans, Lines of Credit &amp; Embedded Lenders</h2>
+<table>
+<thead>
+<tr>
+<th>Lender (product)</th>
+<th>Reports?</th>
+<th>Business bureaus</th>
+<th>Consumer bureaus</th>
+<th>Positive or default-only</th>
+<th>Builds business credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OnDeck</strong> (loan/LOC)</td>
+<td>✅ Yes, monthly</td>
+<td>Experian, Equifax, PayNet</td>
+<td>❌ No (routine)</td>
+<td>Positive + negative</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Amex Business Blueprint</strong> (LOC)</td>
+<td>✅ Yes, monthly</td>
+<td>D&amp;B, Experian Bus, Equifax Bus</td>
+<td>❌ No</td>
+<td>Positive + negative</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Bluevine</strong> (LOC)</td>
+<td>✅ Yes</td>
+<td>Experian Business (some cite D&amp;B)</td>
+<td>Default-only (PG)</td>
+<td>Positive + negative</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Fundbox</strong> (LOC)</td>
+<td>✅ Yes</td>
+<td>SBFE → Exp/Equ/D&amp;B</td>
+<td>Experian consumer (negative only)</td>
+<td>Positive + negative</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Funding Circle / iBusiness</strong> (term)</td>
+<td>✅ Yes</td>
+<td>Experian Bus, D&amp;B (not Equifax)</td>
+<td>❌ No (PG default aside)</td>
+<td>Positive + negative</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>PayPal Business Loan / LoanBuilder</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian Bus, Equifax Bus</td>
+<td>❌ No</td>
+<td>Reported (some say negative-triggered)</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Credibly</strong> (MCA / loans)</td>
+<td>⚠️ MCA: No; loans: maybe</td>
+<td>3 major business (non-MCA only)</td>
+<td>❌ No</td>
+<td>Positive (non-MCA only)</td>
+<td>⚠️ Only via non-MCA products</td>
+</tr>
+<tr>
+<td><strong>Giggle Finance</strong> (MCA)</td>
+<td>✅ Yes</td>
+<td>Type ambiguous</td>
+<td>Experian + TransUnion (likely <strong>consumer</strong>)</td>
+<td>Positive + negative</td>
+<td>⚠️ Marketed loosely</td>
+</tr>
+<tr>
+<td><strong>Rapid Finance</strong> (loans/MCA)</td>
+<td>⚠️ Default-only</td>
+<td>Unverified</td>
+<td>Default-only</td>
+<td>Default-only</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>National Funding</strong></td>
+<td>⚠️ Conflicting / unverified</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>⚠️ Unverified</td>
+</tr>
+<tr>
+<td><strong>Backd</strong> (advance/LOC)</td>
+<td>⚠️ Unverified (likely no)</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>❌ Not marketed</td>
+</tr>
+<tr>
+<td><strong>Mercury Working Capital</strong> (loan)</td>
+<td>⚠️ Unverified <em>(loan)</em> — IO card does report</td>
+<td>IO card: Exp/Equ/D&amp;B</td>
+<td>❌ No (no PG)</td>
+<td>Unverified</td>
+<td>⚠️ Unverified (loan)</td>
+</tr>
+<tr>
+<td><strong>Stripe Capital</strong></td>
+<td>⚠️ SBFE only</td>
+<td>SBFE → business bureaus</td>
+<td>❌ No</td>
+<td>Performance to SBFE; collections on default</td>
+<td>⚠️ Indirect / neutral</td>
+</tr>
+<tr>
+<td><strong>Shopify Capital</strong></td>
+<td>❌ No (default exception)</td>
+<td>None</td>
+<td>❌ No</td>
+<td>Default-only if any</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Square Loans</strong></td>
+<td>❌ No</td>
+<td>None</td>
+<td>❌ No (collections exception)</td>
+<td>Neutral</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>PayPal Working Capital</strong></td>
+<td>❌ No</td>
+<td>None</td>
+<td>❌ None</td>
+<td>Neither</td>
+<td>❌ No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong>
+- <strong>Strongest builders (ongoing positive):</strong> OnDeck, Amex Business Blueprint, Fundbox, Bluevine, Funding Circle, PayPal <strong>Business Loan/LoanBuilder</strong>.
+- <strong>The famous "report nothing" group is confirmed:</strong> <strong>Square Loans, Shopify Capital, PayPal Working Capital</strong> — convenient and credit-invisible, but they build no credit. Stripe Capital is the nuance: it touches SBFE (business side) but isn't marketed as a builder.
+- <strong>MCAs generally don't report</strong> (Credibly's MCA, Rapid Finance's MCA). <strong>Giggle Finance</strong> is the exception — and it likely reports to <strong>consumer</strong> Experian/TransUnion, so for a sole proprietor it can affect <em>personal</em> credit.
+- <strong>Personal-credit exposure</strong> in this group comes almost entirely via <strong>personal guarantee on default</strong> (Bluevine, Funding Circle) or <strong>collections</strong> (Square/Stripe/Shopify on default) — not from ongoing reporting.</p>
+<hr />
+<h2 id="part-3-neobank-credit-products-credit-building-tools">PART 3 — Neobank Credit Products &amp; Credit-Building Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Reports?</th>
+<th>Business bureaus</th>
+<th>Consumer bureaus</th>
+<th>Positive or default-only</th>
+<th>Builds business credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mercury IO</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax</td>
+<td>❌ No</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Relay Visa Credit</strong></td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax</td>
+<td>❌ No</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Nav Prime</strong> (+ Prime Card)</td>
+<td>✅ Yes</td>
+<td>D&amp;B, Experian, Equifax</td>
+<td>❌ No</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (strong)</td>
+</tr>
+<tr>
+<td><strong>Credit Strong (Business)</strong></td>
+<td>✅ Yes</td>
+<td><strong>Equifax Business + PayNet + SBFE only</strong> (not D&amp;B/Experian)</td>
+<td>❌ No (business product)</td>
+<td>Positive, ongoing</td>
+<td>✅ Yes (narrow)</td>
+</tr>
+<tr>
+<td><strong>Novo</strong> (card / Funding)</td>
+<td>❌ No (currently)</td>
+<td>None</td>
+<td>Unverified</td>
+<td>—</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Meow</strong> (corporate card)</td>
+<td>❌ No confirmed</td>
+<td>None/unverified</td>
+<td>❌ No (no credit check)</td>
+<td>—</td>
+<td>❌ No / unverified</td>
+</tr>
+<tr>
+<td><strong>NorthOne</strong></td>
+<td>❌ Account: no; LOC (Kanmon): unverified</td>
+<td>Unverified</td>
+<td>LOC likely PG</td>
+<td>—</td>
+<td>⚠️ LOC unverified</td>
+</tr>
+<tr>
+<td><strong>Baselane</strong></td>
+<td>❌ No (debit card only)</td>
+<td>None</td>
+<td>Tenant rent reporting → tenant's consumer credit</td>
+<td>N/A</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Tillful</strong></td>
+<td>❌ <strong>Defunct</strong> (folded into Nav, 2023)</td>
+<td>Historically business</td>
+<td>—</td>
+<td>—</td>
+<td>❌ Use Nav Prime instead</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong> <em>Mercury IO, Relay, Nav Prime</em> all report ongoing positive to all three business bureaus — the best neobank/tool builders. <strong>Credit Strong Business is real but siloed</strong> to Equifax/PayNet/SBFE, so it won't appear on a D&amp;B PAYDEX or Experian Business pull. <strong>Novo, Meow, Baselane, NorthOne</strong> are <em>not</em> reliable business-credit builders right now.</p>
+<hr />
+<h2 id="part-4-net-30-vendor-accounts-the-ein-only-credit-building-base">PART 4 — Net-30 Vendor Accounts (the EIN-only credit-building base)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Reports?</th>
+<th>D&amp;B</th>
+<th>Experian Bus</th>
+<th>Equifax Bus</th>
+<th>Other</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Crown Office Supplies</strong></td>
+<td>✅ Positive</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>—</td>
+<td><strong>Standout — reports to all 3.</strong> $99/yr, DUNS required</td>
+</tr>
+<tr>
+<td><strong>Quill</strong></td>
+<td>✅ Positive</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+<td>—</td>
+<td>Reports ~90–120 days after opening</td>
+</tr>
+<tr>
+<td><strong>Grainger</strong></td>
+<td>✅ Positive</td>
+<td>✅</td>
+<td>✅ (recent)</td>
+<td>❌</td>
+<td>—</td>
+<td>DUNS + ~$50 min order</td>
+</tr>
+<tr>
+<td><strong>Wise Business Plans</strong></td>
+<td>✅ Positive</td>
+<td>⚠️ Disputed</td>
+<td>✅</td>
+<td>✅</td>
+<td>Creditsafe</td>
+<td>$99 fee; D&amp;B unverified</td>
+</tr>
+<tr>
+<td><strong>Strategic Network Solutions</strong></td>
+<td>✅ Positive</td>
+<td>❌/loose</td>
+<td>✅</td>
+<td>❌</td>
+<td>Creditsafe</td>
+<td>Reports last business day monthly</td>
+</tr>
+<tr>
+<td><strong>Uline</strong></td>
+<td>⚠️ <strong>Contested</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>claimed</td>
+<td>—</td>
+<td>⚠️ <strong>May report negatives only</strong> (default-only) — not reliable for positive building</td>
+</tr>
+<tr>
+<td><strong>Summa Office Supplies</strong></td>
+<td>⚠️ Likely <strong>defunct</strong> net-30</td>
+<td>✅ (was)</td>
+<td>✅ (was)</td>
+<td>claimed</td>
+<td>—</td>
+<td>Verify before using</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong> For EIN-only credit building, <strong>Crown Office Supplies</strong> is the best single starter (all three bureaus). <strong>Quill and Grainger</strong> are solid (D&amp;B + Experian). <strong>Uline is the biggest trap</strong> — multiple sources say it reports <em>only</em> negative/late activity, so it can hurt but may not help. <strong>Wise Business Plans</strong> and <strong>Strategic Network Solutions</strong> lean on <strong>Creditsafe</strong> (a smaller commercial bureau) alongside Experian/Equifax.</p>
+<hr />
+<h2 id="part-5-consumer-itin-focused-products-personal-credit">PART 5 — Consumer &amp; ITIN-Focused Products (Personal Credit)</h2>
+<p>These matter for an ITIN holder building a <strong>personal</strong> credit file from scratch.</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Reports?</th>
+<th>Consumer bureaus (which)</th>
+<th>Positive or default-only</th>
+<th>Good for ITIN credit-building?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Self</strong> (Builder + secured Visa)</td>
+<td>✅ Yes</td>
+<td><strong>All 3</strong> (Equifax, Experian, TransUnion)</td>
+<td>Full positive, ongoing</td>
+<td>✅ <strong>Excellent</strong> — no credit check, ITIN-friendly, two tradelines</td>
+</tr>
+<tr>
+<td><strong>Majority</strong> (Visa secured)</td>
+<td>✅ Yes</td>
+<td>⚠️ "One or more" — <em>which</em> unverified</td>
+<td>Positive + negative</td>
+<td>✅ Plausibly good (immigrant-built); confirm bureaus</td>
+</tr>
+<tr>
+<td><strong>Tilt</strong> (Petal's successor)</td>
+<td>✅ Yes</td>
+<td>All 3</td>
+<td>Full positive</td>
+<td>✅ Likely; ITIN acceptance unverified</td>
+</tr>
+<tr>
+<td><strong>Petal 1 / Petal 2</strong></td>
+<td>✅ Existing holders only</td>
+<td>All 3</td>
+<td>Full positive</td>
+<td>⚠️ <strong>Closed to new applicants</strong> (now Tilt)</td>
+</tr>
+<tr>
+<td><strong>Capital One Spark</strong> (standard variants)</td>
+<td>✅ Yes</td>
+<td><strong>All 3 personal</strong> (+ business bureaus)</td>
+<td>Full positive</td>
+<td>✅ Rare business card that builds <strong>personal</strong> credit (Spark Cash Plus / Venture X Business = default-only)</td>
+</tr>
+<tr>
+<td><strong>Chase Ink</strong> (business)</td>
+<td>✅ Yes</td>
+<td>Personal: <strong>default-only</strong></td>
+<td>Business positive; personal default-only</td>
+<td>❌ Builds business credit, not personal</td>
+</tr>
+<tr>
+<td><strong>Amex Business</strong></td>
+<td>✅ Yes</td>
+<td>Personal: <strong>default-only</strong> (60+ dpd)</td>
+<td>Business positive; personal default-only</td>
+<td>❌ Builds business credit, not personal</td>
+</tr>
+<tr>
+<td><strong>Tomo</strong> (credit card)</td>
+<td>❌ <strong>Not currently</strong></td>
+<td>Formerly all 3; <strong>none now</strong> (bureaus dropped it in 2024)</td>
+<td>N/A</td>
+<td>❌ Avoid until reporting resumes</td>
+</tr>
+<tr>
+<td><strong>Sequin</strong></td>
+<td>❌ Credit feature <strong>discontinued</strong></td>
+<td>Formerly Experian only (disputed)</td>
+<td>N/A</td>
+<td>❌ No</td>
+</tr>
+<tr>
+<td><strong>Comun</strong></td>
+<td>⚠️ Credit product <strong>in development</strong></td>
+<td>None confirmed</td>
+<td>Unverified</td>
+<td>⚠️ ITIN banking yes; not a confirmed tradeline</td>
+</tr>
+<tr>
+<td><strong>Camino Financial</strong> (business loan)</td>
+<td>⚠️ Unverified</td>
+<td>None (business product)</td>
+<td>Unverified</td>
+<td>❌ Not a personal-credit tool</td>
+</tr>
+<tr>
+<td><strong>Stilt</strong></td>
+<td>❌ <strong>Defunct</strong> (sold to J.G. Wentworth)</td>
+<td>—</td>
+<td>N/A</td>
+<td>❌ No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Takeaways:</strong>
+- <strong>Best confirmed for an ITIN thin file:</strong> <strong>Self</strong> (all 3 bureaus, no credit check, two tradelines) and <strong>Majority Visa secured</strong> (immigrant-built — confirm which bureaus). <strong>Tilt</strong> if ITIN is accepted.
+- <strong>Of the ITIN-accepting business cards, only Capital One Spark (standard variants) builds <em>personal</em> credit</strong> with ongoing positive reporting. <strong>Chase Ink and Amex Business build business credit only</strong> and touch personal credit just on default — poor choices for a thin personal file.
+- <strong>Do not rely on:</strong> Tomo (not reporting in 2026), Sequin (feature gone), Stilt (defunct), or Comun-as-a-tradeline (credit product unconfirmed).</p>
+<hr />
+<h2 id="part-6-strategy-building-both-files-on-an-itin">PART 6 — Strategy: Building Both Files on an ITIN</h2>
+<p><strong>To build BUSINESS credit (no personal-credit exposure):</strong>
+1. Foundation: US entity + EIN + <strong>DUNS number</strong>.
+2. Open <strong>3–4 net-30 vendors</strong> that report positive — lead with <strong>Crown Office Supplies</strong> (all 3 bureaus), add <strong>Quill</strong> and <strong>Grainger</strong>. Avoid relying on <strong>Uline</strong> for positive history.
+3. Add a reporting <strong>charge card / tool</strong>: <strong>Ramp</strong> or <strong>Brex</strong> (all 3 business bureaus, no PG, no personal pull) and/or <strong>Nav Prime</strong> (monthly tradeline to all 3).
+4. After 6–12 months, graduate to a reporting <strong>lender</strong> (OnDeck, Amex Business Blueprint, Bluevine) for larger limits.</p>
+<p><strong>To build PERSONAL credit on an ITIN:</strong>
+1. Start with <strong>Self</strong> (Credit Builder + secured Visa → all 3 consumer bureaus, no credit check).
+2. Add <strong>Majority</strong> secured Visa or <strong>Tilt</strong> (if ITIN accepted).
+3. Once a personal score exists, a <strong>Capital One Spark</strong> card can add ongoing positive <em>personal</em> reporting while also funding the business.</p>
+<p><strong>Avoid for credit-building</strong> (they report nothing): <strong>Square Loans, Shopify Capital, PayPal Working Capital</strong> — great for cheap, credit-invisible capital, but they build no file.</p>
+<hr />
+<h2 id="quick-reference-reports-ongoing-positive-to-all-3-business-bureaus">Quick Reference: "Reports Ongoing Positive to All 3 Business Bureaus"</h2>
+<p>✅ <strong>Brex · Ramp · Mercury IO · Relay · Nav Prime · Amex Business Blueprint · Crown Office Supplies</strong> (net-30)</p>
+<h2 id="quick-reference-reports-nothing-credit-invisible">Quick Reference: "Reports Nothing (Credit-Invisible)"</h2>
+<p>❌ <strong>Square Loans · Shopify Capital · PayPal Working Capital · Navan · Novo · Meow · Baselane</strong></p>
+<h2 id="quick-reference-touches-personal-credit">Quick Reference: "Touches PERSONAL Credit"</h2>
+<ul>
+<li><strong>On default only (PG):</strong> Capital on Tap, Bluevine, Funding Circle, Chase Ink, Amex Business</li>
+<li><strong>Ongoing positive (consumer bureaus):</strong> Self, Majority, Tilt, Capital One Spark (standard), and likely Giggle Finance (sole props)</li>
+</ul>
+<hr />
+<h2 id="important-caveats-methodology">Important Caveats &amp; Methodology</h2>
+<ul>
+<li><strong>Point-in-time, June 2026.</strong> Reporting practices are voluntary and change without notice. <strong>Confirm directly with each provider before relying on a tradeline.</strong></li>
+<li><strong>WebFetch was blocked (HTTP 403) on most primary help-center pages</strong> (Mercury, Stripe, Nav, OnDeck, Bankrate, NerdWallet, vendor sites). Findings rely on search-result snippets cross-referenced across reputable third parties (Nav, NerdWallet, Bankrate, Merchant Maverick, Finder, Credit Suite, Kudos, United Capital Source) plus issuer pages. Items that could not be confirmed to a primary source are marked <strong>unverified</strong>.</li>
+<li><strong>Highest-confidence findings:</strong> Brex, Ramp, Mercury IO, Relay, Nav Prime, Self, Crown, Quill, Grainger, OnDeck, Amex Blueprint, and the "report nothing" group (Square/Shopify/PayPal WC).</li>
+<li><strong>Lowest-confidence / verify directly:</strong> Rho's exact bureau list; Stripe Corp Card positive-vs-default; Emburse and Torpago full bureau lists; Backd, National Funding, Mercury Working Capital (loan); Uline's positive-vs-default scope; Summa's availability; Wise Business Plans' D&B; Majority's specific consumer bureaus; Giggle's bureau type; Comun's credit product.</li>
+<li><strong>2026 product-status changes to note:</strong> Tomo not currently reporting; Petal closed to new applicants (now Tilt); Sequin discontinued credit-building; Tillful folded into Nav; Stilt defunct.</li>
+<li><strong>Not legal or financial advice.</strong> Consult a qualified advisor for your situation.</li>
+</ul>
+<hr />
+<p><em>Compiled from parallel research across no-PG corporate cards, fintech business lenders and embedded platforms, deposit-focused neobanks and net-30 vendors, and consumer/ITIN credit products. Sources include issuer help centers and product pages, business-credit specialists (Nav, Credit Suite, Business Credit Workshop), and independent reviews (NerdWallet, Bankrate, Merchant Maverick, Finder, Kudos, United Capital Source).</em></p>
+</body></html>
